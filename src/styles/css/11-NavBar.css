@@ -1,0 +1,161 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(77, 77, 77);
+  color: white;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(252, 252, 252);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+/* all containers */
+.logo-container,
+.links-container,
+.social-media-container,
+.toggle-btn-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* single containers */
+.logo-container {
+  width: 28%;
+}
+.links-container {
+  width: 60%;
+}
+.social-media-container {
+  width: 23%;
+}
+.toggle-btn-container {
+  display: none;
+  width: 10%;
+}
+
+/* single items */
+.logo {
+  height: 80px;
+}
+.link {
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(77, 77, 77);
+  transition: 0.3s;
+}
+.social-media-icon {
+  font-size: 30px;
+  text-decoration: none;
+  color: rgb(77, 77, 77);
+  transition: 0.3s;
+}
+
+/* HOVERS */
+.link:hover {
+  color: rgb(253, 75, 75);
+}
+.youtube:hover {
+  color: #f70000;
+}
+.instagram:hover {
+  color: #c684f8;
+}
+.facebook:hover {
+  color: rgb(72, 103, 170);
+}
+.discord:hover {
+  color: rgb(78, 98, 238);
+}
+
+/* Toggle-btn */
+.toggle-btn-container {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.toggle-btn {
+  border: transparent;
+  background-color: transparent;
+  color: rgb(77, 77, 77);
+  margin-top: 25px;
+  transition: 0.3s;
+  font-size: 30px;
+  padding-bottom: 6px;
+}
+.toggle-btn:hover {
+  color: rgb(253, 75, 75);
+  transform: rotate(90deg);
+}
+
+/* sidebar */
+.sidebar {
+  height: 0;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  animation: sidedivedown 0.8s ease-in;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+.showsidebar {
+  height: 260px;
+  overflow: hidden;
+}
+.side-link {
+  color: white;
+  padding: 10px;
+}
+.side-link:hover {
+  background-color: rgb(252, 252, 252);
+}
+/* animation */
+@keyframes sidedivedown {
+  0% {
+    height: 0%;
+  }
+  20% {
+    height: 20%;
+  }
+  40% {
+    height: 40%;
+  }
+  60% {
+    height: 60%;
+  }
+  80% {
+    height: 80%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+/* media only screen keyframe */
+@media only screen and (max-width: 990px) {
+  .social-media-container {
+    display: none;
+  }
+  .links-container {
+    display: none;
+  }
+  .toggle-btn-container {
+    display: flex;
+    width: 15%;
+  }
+}
+@media only screen and (max-width: 875px) {
+  .logo-container {
+    width: 50%;
+  }
+}

@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  color: rgb(16, 42, 66);
+  background-color: rgb(240, 245, 252);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 50%;
+}
+.heading {
+  font-family: monospace;
+  font-size: 35px;
+}
+/* default-alert */
+.alert {
+  text-align: center;
+  padding: 0px;
+  margin-top: 10px;
+  width: 100%;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  opacity: 0;
+}
+/* for add btn */
+.alert-add {
+  opacity: 1;
+  background-color: lightgreen;
+  border: 1px solid green;
+}
+/* for delete btn */
+.alert-danger {
+  opacity: 1;
+  background-color: lightcoral;
+  border: 1px solid crimson;
+}
+/* for edit btn */
+.alert-edit {
+  opacity: 1;
+  background-color: orange;
+  border: 1px solid orangered;
+}
+/* for clear all btn */
+.alert-clearAll {
+  opacity: 1;
+  background-color: skyblue;
+  border: 1px solid blue;
+}
+form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  margin: 10px 10px 20px 10px;
+}
+.form-control {
+  width: 80%;
+}
+li {
+  list-style-type: none;
+}
+.list-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid red;
+}
+.name {
+  width: 70%;
+  margin-left: 10px;
+  pointer-events: none;
+}
+.btn-container {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mybtn {
+  padding: 2px;
+  font-size: 25px;
+  background: transparent;
+  border: transparent;
+}
+.edit {
+  color: orange;
+}
+.delete {
+  color: crimson;
+}
+.clear-all-btn {
+  margin: 10px;
+}
+.icon {
+  pointer-events: none;
+}
+@media only screen and (max-width: 900px) {
+  .container {
+    width: 90%;
+  }
+}

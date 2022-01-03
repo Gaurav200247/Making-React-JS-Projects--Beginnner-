@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  color: rgb(16, 42, 66);
+  background-color: rgb(240, 245, 252);
+  text-align: center;
+}
+.heading {
+  padding: 10px;
+  font-family: monospace;
+  font-weight: 500;
+}
+.slash {
+  color: tomato;
+  font-size: 55px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  width: 80%;
+}
+.section-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 1000px;
+  overflow: hidden;
+  height: 580px;
+}
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 550px;
+  opacity: 0;
+  transition: 0.5s;
+}
+article.active-slide {
+  opacity: 1;
+  transform: translateX(0);
+}
+article.next-slide {
+  transform: translateX(100%);
+}
+article.prev-slide {
+  transform: translateX(-100%);
+}
+.img {
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  object-fit: cover;
+  border: 4px solid rgb(16, 42, 66);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.name {
+  color: orangered;
+  margin-top: 10px;
+  font-size: 25px;
+}
+.position {
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+}
+.info {
+  width: 75%;
+  margin-top: 10px;
+  padding: 5px;
+}
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+.hat-icon {
+  font-size: 40px;
+  color: rgb(210, 175, 102);
+}
+.next-btn,
+.prev-btn {
+  background-color: rgb(16, 42, 66);
+  color: white;
+  padding: 4px 8px 8px 8px;
+  font-size: 25px;
+  border: 1px solid rgb(16, 42, 66);
+  border-radius: 10px;
+  z-index: 2;
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    width: 85%;
+  }
+  .section-center {
+    width: 450px;
+  }
+  article {
+    height: 600px;
+  }
+  .img {
+    height: 350px;
+    width: 315px;
+    border-radius: 0%;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .container {
+    width: 85%;
+  }
+  .section-center {
+    top: -100px;
+    width: 230px;
+    height: 900px;
+  }
+  article {
+    height: 800px;
+  }
+  .img {
+    height: 150px;
+    width: 200px;
+    border-radius: 0%;
+  }
+  .name {
+    font-size: 17px;
+  }
+  .position {
+    font-size: 15px;
+  }
+  .info {
+    font-size: 14px;
+  }
+  .next-btn,
+  .prev-btn {
+    color: orangered;
+    padding: 0 0 5px 0;
+    font-size: 25px;
+  }
+}

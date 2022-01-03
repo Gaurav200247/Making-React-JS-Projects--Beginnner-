@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  color: black;
+  background-color: plum;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 30%;
+}
+.sub-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.single-item {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid black;
+}
+.heading {
+  padding: 10px 10px 0px 10px;
+  font-family: "Inconsolata", monospace;
+  font-weight: bolder;
+}
+.sub-heading {
+  font-family: "Inconsolata", monospace;
+  font-weight: 800;
+}
+
+.rect {
+  height: 3px;
+  width: 50%;
+  background-color: skyblue;
+}
+img {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+}
+button {
+  margin: 10px;
+}
+.info {
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+  padding: 3px;
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .container {
+    width: 90%;
+  }
+}
