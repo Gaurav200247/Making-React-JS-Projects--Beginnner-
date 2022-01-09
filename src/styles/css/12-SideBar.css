@@ -1,0 +1,234 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  color: rgb(16, 42, 66);
+  background-color: rgb(240, 245, 252);
+}
+
+/* App */
+.container {
+  position: relative;
+  width: 100%;
+}
+
+/* Home */
+.toggle-btn {
+  position: fixed;
+  top: 10px;
+  left: 20px;
+  z-index: -2;
+
+  background: transparent;
+  border: transparent;
+  font-size: 35px;
+  color: rgb(73, 166, 233);
+
+  animation: btnscaling 1s linear infinite;
+}
+.modal-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: auto;
+  margin-top: 250px;
+  z-index: -2;
+
+  color: whitesmoke;
+  background-color: black;
+  border: 1px solid black;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  transition: 0.5s;
+  font-size: 25px;
+}
+.modal-btn:hover {
+  color: black;
+  background-color: whitesmoke;
+  border: 1px solid black;
+}
+
+/* Modal */
+.modal-overlay {
+  width: 100%;
+  height: 100vh;
+
+  background-color: rgb(120, 122, 124, 0.5);
+
+  position: fixed;
+  top: 0px;
+  left: 0px;
+
+  visibility: hidden;
+}
+.show-modal {
+  z-index: 10;
+  visibility: visible;
+}
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: auto;
+  margin-top: 230px;
+  margin-bottom: 50px;
+
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  background-color: white;
+  width: 35%;
+
+  z-index: 12;
+}
+.cross-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 10px;
+}
+.modal-heading {
+  font-size: 30px;
+  font-family: monospace;
+  font-weight: bolder;
+}
+.modal-content {
+  padding: 10px;
+  border: transparent;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  animation: sidebaropen 0.5s linear;
+
+  height: 100vh;
+  background-color: #fcfcfc;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+  width: 25%;
+  transform: translate(-100%);
+  transition: 0.5s;
+}
+.show-sidebar {
+  transform: translate(0);
+}
+.sidebar-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.links-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.social-container {
+  padding: 10px;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  width: 100%;
+  margin-bottom: 30px;
+}
+/* Assests of containers */
+.link {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(77, 77, 77);
+  transition: 0.3s;
+}
+.sidebar-icon {
+  margin-right: 10px;
+  font-size: 20px;
+  color: rgb(130, 155, 209);
+}
+.social-media-icon {
+  font-size: 30px;
+  text-decoration: none;
+  color: rgb(77, 77, 77);
+  transition: 0.3s;
+}
+.logo {
+  width: 80%;
+  height: 80px;
+}
+.cross-icon {
+  width: 15%;
+  cursor: pointer;
+  color: rgb(187, 37, 37);
+  font-size: 25px;
+}
+
+/* sidebar HOVERS */
+.link:hover {
+  background-color: rgb(72, 103, 170);
+  color: white;
+}
+.youtube {
+  color: #f70000;
+}
+.instagram {
+  color: #c684f8;
+}
+.facebook {
+  color: rgb(72, 103, 170);
+}
+.discord {
+  color: rgb(78, 98, 238);
+}
+.linkedin {
+  padding-bottom: 10px;
+}
+
+/* animations */
+@keyframes btnscaling {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes sidebaropen {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 15%;
+  }
+  100% {
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .sidebar {
+    width: 50%;
+  }
+  .modal-container {
+    width: 70%;
+  }
+}

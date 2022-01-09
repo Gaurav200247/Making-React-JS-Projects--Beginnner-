@@ -5,7 +5,7 @@ import SideBar from "./SideBar";
 
 const App = () => {
   return (
-    <div>
+    <div className="container">
       <Home />
       <SideBar />
       <Modal />
