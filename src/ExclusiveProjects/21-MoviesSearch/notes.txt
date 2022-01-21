@@ -1,0 +1,14 @@
+*for search
+
+https://www.omdbapi.com/?apikey=89f3a225&s=john
+`https://www.omdbapi.com/?apikey=89f3a225&s=${search term}`
+
+------------------------------------------------------------------
+
+*for single movie
+
+https://www.omdbapi.com/?i=tt2911666&apikey=89f3a225
+`https://www.omdbapi.com/?i=${id of movie}&apikey= 89f3a225`
+
+
+-------------------------------------------------------------------

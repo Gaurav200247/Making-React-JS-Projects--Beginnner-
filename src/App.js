@@ -1,6 +1,6 @@
 import React from "react";
-import Project from "./Projects/AdvanceProjects/15-Cocktails/App";
-import "./styles/css/15-cocktails.css";
+import Project from "./ExclusiveProjects/23-Quiz/App";
+import "./styles/css2/23-Quiz.css";
 
 const App = () => {
   return (

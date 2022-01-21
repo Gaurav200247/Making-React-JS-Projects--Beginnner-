@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  color: rgb(16, 42, 66);
+  background-color: rgb(240, 245, 252);
+}
+.pagination {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: 90%;
+  margin-top: 30px;
+}
+.heading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.heading {
+  padding: 10px;
+}
+.rect {
+  background-color: skyblue;
+  height: 5px;
+  width: 80%;
+}
+.page {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.follower-container {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border-radius: 15px;
+
+  margin: 20px;
+  padding: 20px 20px 0px 20px;
+}
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+.image {
+  border-radius: 100%;
+  object-fit: cover;
+  border: 4px solid skyblue;
+  width: 100%;
+}
+.link-container {
+  font-family: monospace;
+  padding: 20px;
+}
+.link {
+  color: black;
+  text-decoration: none;
+}
+.link:hover {
+  color: orangered;
+}
+.btn-container {
+  margin-bottom: 30px;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mybtn {
+  padding: 5px 10px 5px 10px;
+  border: 1px solid slateblue;
+  background-color: slateblue;
+  color: white;
+  transition: 0.4s;
+}
+.mybtn:hover {
+  color: slateblue;
+  background-color: white;
+}
+.active-btn {
+  background-color: white;
+  color: slateblue;
+}
