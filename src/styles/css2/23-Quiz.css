@@ -183,11 +183,6 @@ option {
   transition: 0.4s;
   text-align: center;
 }
-.answer-btn:hover {
-  background-color: orangered;
-  color: black;
-  border: 1px solid black;
-}
 .next-btn-container {
   display: flex;
   justify-content: flex-end;
@@ -219,24 +214,6 @@ option {
   color: crimson;
   height: 20px;
 }
-.footer {
-  background-color: black;
-  color: white;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.owner-info,
-.date {
-  font-family: monospace;
-  font-size: 20px;
-}
-.date {
-  font-size: 15px;
-}
 
 /* loading */
 @keyframes spinner {
@@ -261,7 +238,7 @@ option {
     margin-top: 30px;
   }
   .form-container {
-    margin-top: 30px;
+    margin-top: 80px;
     margin-bottom: 20px;
     padding: 10px;
     width: 95%;

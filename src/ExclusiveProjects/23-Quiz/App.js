@@ -1,6 +1,5 @@
 import React from "react";
 import { useGlobalstate } from "./Context";
-import Footer from "./Footer";
 import Loading from "./Loading";
 import Modal from "./Modal";
 import SetupForm from "./SetupForm";
@@ -19,7 +18,6 @@ const App = () => {
     return (
       <>
         <SetupForm />
-        <Footer />
       </>
     );
   }
